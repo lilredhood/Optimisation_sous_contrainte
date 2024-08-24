@@ -7,9 +7,11 @@ Dossier Contraintes_inegalite (https://en.wikipedia.org/wiki/Karush%E2%80%93Kuhn
  
  Dossier Contraintes_egalite (https://en.wikipedia.org/wiki/Lagrange_multiplier) : 
   - On considère le problème de l’optimisation d’un portefeuille. On appelle $J$, la fonction définie sur $\mathbf{R}$ par 
-  $J(x) = \frac{1}{2} \< x, Ax \>_{\mathbf{R}^n}$
-  On désigne par $K$, l’ensemble des contraintes, soit $K = ${$ x \in \mathbf{R}^n \vert <x, u> = 1, ~ <x, e> = r_0 $}. L’objectif est de résoudre numériquement le     problème $\inf_{x \in K} J(x)$. Nous allons ré-écrire notre ensemble $K$ de la façon suivante : $K = ${$ x \in Cx = f$} avec : 
- $C =$ \begin{pmatrix} 1 & \cdots & 1 \\ e_1 & \cdots & e_n \end{pmatrix}
-et $f = (1, r_0)^T$.
+  $J(x) = \frac{1}{2} \langle x, Ax \rangle_{\mathbf{R}^n}$
+  On désigne par $K$, l’ensemble des contraintes, soit $K = \lbrace x \in \mathbf{R}^n \vert \langle x, u \rangle = 1, ~ \langle x, e \rangle = r_0 \rbrace$. L’objectif est de résoudre numériquement le problème $\inf_{x \in K} J(x)$. Nous allons ré-écrire notre ensemble $K$ de la façon suivante : $K = \lbrace x \in \mathbf{R}^n \vert Cx = f \rbrace$ avec : 
+
+```math
+ C = \begin{pmatrix} 1 & \cdots & 1 \\ e_1 & \cdots & e_n \end{pmatrix} ~ \text{et} ~~ f = (1, r_0)^T
+```
   - Théorème des extrémas liés
   - Algorithme d'Uzuwa
